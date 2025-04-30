@@ -1,1 +1,40 @@
-/* You can add global styles to this file, and also import other style files */
+@import "tailwindcss";
+:root {
+    --primary-color: #3b82f6;
+    --primary-color-dark: #2563eb;
+    --text-color: #1f2937;
+    --bg-gradient-start: #93c5fd;
+    --bg-gradient-end: #3b82f6;
+    --form-bg: #ffffff;
+    --border-radius: 12px;
+    --box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+  
+  body, html {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(135deg, var(--bg-gradient-start), var(--bg-gradient-end));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  form {
+    background-color: var(--form-bg);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+  }
+  
+  button{
+    margin-top: 2rem;
+  }
+  
